@@ -19,13 +19,13 @@ docker run --name broadlinksvc -p "7020:7020" techblog/broadlinksvc:latest
 ```yaml
 version: "3.6"
 services:
-  redalert:
+  broadlinksvc:
     image: techblog/broadlinksvc
+    network_mode: host
     container_name: broadlinksvc
     restart: always
     restart: unless-stopped
-    ports: 
-      - "7020:7020"
+
 ```
 
 
