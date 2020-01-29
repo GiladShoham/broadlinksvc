@@ -1,4 +1,4 @@
-# Broadlink SVC Docker
+# Broadlinksvc Docker
 __________________________________________
 
 Ubuntu based image running python script that Allows us to interact with Brodlink Devices over http <br/>
