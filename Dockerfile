@@ -14,6 +14,6 @@ RUN mkdir /opt/broadlinksvc
 
 EXPOSE 7020
 
-COPY broadlinksvc /opt/
+COPY broadlinksvc /opt/broadlinksvc
 
 ENTRYPOINT ["/usr/bin/python3", "/opt/broadlinksvc/broadlinksvc.py"]
