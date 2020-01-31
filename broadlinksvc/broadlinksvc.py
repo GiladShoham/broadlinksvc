@@ -69,7 +69,7 @@ def discover():
        html = html + '<td class="cell100 column1 device_name">'+ getDeviceName(device.devtype) +'</td>'
        html = html + '<td class="cell100 column2 device_type">'+ format(hex(device.devtype)) +'</td>'
        html = html + '<td class="cell100 column3 device_ip ">'+ device.host[0] +'</td>'
-       html = html + '<td class="cell100 column4 device_mac">'+ ''.join(format(x, '02x') for x in device.mac) +'</td>'
+       html = html + '<td class="cell100 column4 device_mac">'+ ''.join(format(x, '02x') for x in device.mac[::-1]) +'</td>'
        html = html + '</tr>'
   return render_template('discovery.htm',content=html)
 
