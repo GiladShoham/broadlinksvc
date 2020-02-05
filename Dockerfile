@@ -16,4 +16,9 @@ EXPOSE 7020
 
 COPY broadlinksvc /opt/broadlinksvc
 
+#Cleanup
+RUN apt remove python3-pip --yes && \
+    apt autoremove --yes && \
+    rm -rf /var/cache/*
+
 ENTRYPOINT ["/usr/bin/python3", "/opt/broadlinksvc/broadlinksvc.py"]
