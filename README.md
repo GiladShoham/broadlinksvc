@@ -23,7 +23,6 @@ services:
     image: techblog/broadlinksvc
     network_mode: host
     container_name: broadlinksvc
-    restart: always
     restart: unless-stopped
 
 ```
